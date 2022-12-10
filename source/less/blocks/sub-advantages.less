@@ -1,0 +1,55 @@
+.sub-advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sub-advantages__special-title {
+  &--house {
+    position: relative;
+  }
+
+  &--food {
+    position: relative;
+  }
+
+  &--gift {
+    position: relative;
+  }
+}
+
+.sub-advantages__special-title--house::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top: -50%;
+  left: -45px;
+  background-image: url("../../source/img/advantage-icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sub-advantages__special-title--food::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top: -50%;
+  left: -45px;
+  background-image: url("../../source/img/advantage-icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sub-advantages__special-title--gift::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top: -50%;
+  left: -45px;
+  background-image: url("../../source/img/advantage-icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
