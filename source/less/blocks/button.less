@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  padding: 17px 30px 15px 30px;
+  color: @color-primary-white;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  background-color: @color-secondary-blue;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: @color-secondary-hover;
+  }
+
+  &:active {
+    color: fade(@color-primary-white, 30%);
+    background-color: @color-secondary-active;
+  }
+
+  &:disabled {
+
+    background-color: @color-secondary-disabled;
+
+    &:hover {
+      background-color: @color-secondary-disabled;
+    }
+
+    &:active {
+      color: @color-primary-white;
+      background-color: @color-secondary-disabled;
+    }
+  }
+}
