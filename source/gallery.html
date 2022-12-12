@@ -2,16 +2,17 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="./index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона">
       </a>
       <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -30,9 +31,6 @@
             </li>
           </ul>
         </div>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
       </nav>
     </header>
 
@@ -171,5 +169,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="../script.js"></script>
   </body>
 </html>
