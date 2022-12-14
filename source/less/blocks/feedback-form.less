@@ -1,7 +1,120 @@
 .feedback-form {
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
 }
 
 .feedback-form__section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
   margin-top: 24px;
+  padding: 0;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
 }
+
+.feedback-form__wrapper {
+  width: 100%;
+}
+
+.feedback-form__section--impression,
+.feedback-form__section--sightseeing {
+  width: 100%;
+}
+
+.feedback-form__section--emotion {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.feedback-form__legend {
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+.feedback-form__label {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-bottom: 16px;
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
+}
+
+.feedback-form__input {
+  padding: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: @bg-field;
+  border: none;
+}
+
+
+.feedback-form__textarea {
+  min-height: 160px;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+.feedback-form__button {
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+  }
+}
+
+.button__form {
+  width: 284px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+  }
+}
+
+.feedback__send-mark {
+  display: block;
+  align-self: center;
+}
+

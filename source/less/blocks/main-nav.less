@@ -70,6 +70,7 @@
   text-decoration: none;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
@@ -162,12 +163,14 @@
 
 .main-nav--closed .main-nav__toggle {
   &:hover::before {
+    background-color: fade(@color-secondary-blue, 60%);
     box-shadow:
       0 8px 0 0 fade(@color-secondary-blue, 60%),
       0 16px 0 0 fade(@color-secondary-blue, 60%);
   }
 
   &:active::before {
+    background-color: fade(@color-secondary-blue, 30%);
     box-shadow:
       0 8px 0 0 fade(@color-secondary-blue, 30%),
       0 16px 0 0 fade(@color-secondary-blue, 30%);

@@ -1,6 +1,16 @@
 .advantage-container {
+  width: 320px;
+  box-sizing: border-box;
   padding: 24px 26px;
   background-color: @bg-advantages;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .advantage-container--special {
