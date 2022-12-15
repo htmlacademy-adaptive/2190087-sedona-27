@@ -2,15 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="./index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона">
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -30,10 +31,10 @@
             </li>
           </ul>
         </div>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
       </nav>
+      <div class="header__banner welcome-banner">
+        <img class="welcome-banner-form" width="461" height="350" src="../source/img/welcome-banner-text-form.svg" alt="Добро пожаловать в Седону!">
+      </div>
     </header>
 
     <main class="main-container">
@@ -67,27 +68,47 @@
             </label>
           </fieldset>
 
-          <fieldset class="feedback-form__section feedback-form__section--impression">
-            <legend class="feedback-form__legend title">Ваше общее впечатление:</legend>
-            <input class="feedback-form__radio" type="radio" name="impression" id="positive" checked>
-            <label class="feedback-form__label">Скорее положительное</label>
-            <input class="feedback-form__radio" type="radio" name="impression" id="negative">
-            <label class="feedback-form__label">Скорее отрицательное</label>
-            <input class="feedback-form__radio" type="radio" name="impression" id="undecided">
-            <label class="feedback-form__label">Затрудняюсь ответить</label>
-          </fieldset>
+          <div class="feedback-form__wrapper">
+            <fieldset class="feedback-form__section feedback-form__section--impression">
+              <legend class="feedback-form__legend title">Ваше общее впечатление:</legend>
+              <ul class="feedback-form__impression-list feedback-list">
+                <li class="feedback-item">
+                  <input class="feedback-list__radio" type="radio" name="impression" id="positive" checked>
+                  <label class="feedback-list__label">Скорее положительное</label>
+                </li>
+                <li class="feedback-item">
+                  <input class="feedback-list__radio" type="radio" name="impression" id="negative">
+                  <label class="feedback-list__label">Скорее отрицательное</label>
+                </li>
+                <li class="feedback-item">
+                  <input class="feedback-list__radio" type="radio" name="impression" id="undecided">
+                  <label class="feedback-list__label">Затрудняюсь ответить</label>
+                </li>
+            </ul>
+            </fieldset>
 
-          <fieldset class="feedback-form__section feedback-form__section--sightseeing">
-            <legend class="feedback-form__legend title">Посещенные достопримечательности:</legend>
-            <input class="feedback-form__checkbox" type="checkbox" name="sightseeing" id="devil-bridge" checked>
-            <label class="feedback-form__label">Мост Дьявола</label>
-            <input class="feedback-form__checkbox" type="checkbox" name="sightseeing" id="bell-mountain" checked>
-            <label class="feedback-form__label">Гора-Колокол</label>
-            <input class="feedback-form__checkbox" type="checkbox" name="sightseeing" id="slide-park" checked>
-            <label class="feedback-form__label">Слайд-парк</label>
-            <input class="feedback-form__checkbox" type="checkbox" name="sightseeing" id="red-rocks">
-            <label class="feedback-form__label">Красные скалы</label>
-          </fieldset>
+            <fieldset class="feedback-form__section feedback-form__section--sightseeing">
+              <legend class="feedback-form__legend title">Посещенные достопримечательности:</legend>
+              <ul class="feedback-form__impression-list feedback-list feedback-list--width">
+                <li class="feedback-item">
+                  <input class="feedback-list__checkbox" type="checkbox" name="sightseeing" id="devil-bridge" checked>
+                  <label class="feedback-list__label">Мост Дьявола</label>
+                </li>
+                <li class="feedback-item">
+                  <input class="feedback-list__checkbox" type="checkbox" name="sightseeing" id="bell-mountain" checked>
+                  <label class="feedback-list__label">Гора-Колокол</label>
+                </li>
+                <li class="feedback-item">
+                  <input class="feedback-list__checkbox" type="checkbox" name="sightseeing" id="slide-park" checked>
+                  <label class="feedback-list__label">Слайд-парк</label>
+                </li>
+                <li class="feedback-item">
+                  <input class="feedback-list__checkbox" type="checkbox" name="sightseeing" id="red-rocks">
+                  <label class="feedback-list__label">Красные скалы</label>
+                </li>
+                </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="feedback-form__section feedback-form__section--emotion">
             <legend class="feedback-form__legend title">Опишите свои эмоции:</legend>
@@ -95,15 +116,14 @@
             <textarea class="feedback-form__textarea" id="review" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
 
-          <div class="feedback-form__section feedback-form__section--submit">
-              <button class="button" type="submit">Отправить отзыв</button>
+          <div class="feedback-form__button feedback-form__button--submit">
+              <button class="button button__form" type="submit">Отправить отзыв</button>
               <span class="feedback__send-mark">* &mdash; обязательные поля</span>
           </div>
         </form>
         </section>
 
         <footer class="main-footer">
-          <div class="main-footer__wrapper">
             <a class="main-footer__tags" href="#">#visitsedona</a>
             <div class="main-footer__social social">
               <ul class="social__list">
@@ -138,6 +158,9 @@
               <svg class="copyright__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none"><path fill="#000" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
               </svg>
             </div>
-          </div>
         </footer>
       </main>
+
+      <script src="../script.js"></script>
+    </body>
+  </html>
