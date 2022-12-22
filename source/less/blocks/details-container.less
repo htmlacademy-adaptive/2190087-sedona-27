@@ -1,1 +1,33 @@
-// Начните писать стили здесь
+.details-container__title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.details-container__author {
+  margin: 0;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  min-height: 80px;
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: @bg-field;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: @color-primary-white;
+    background-color: fade(#000000, 30%);
+  }
+}

@@ -19,6 +19,28 @@
 }
 
 .social__link {
+  position: relative;
   display: block;
-  padding: 17px 12px;
+  width: 48px;
+  height: 48px;;
+
+  &:hover {
+    background-color: @color-secondary-hover;
+  }
+
+  &:active {
+    background-color: @color-secondary-active;
+  }
+
+  &:active .social__link-icon {
+    color: fade(@color-primary-white, 30%);
+  }
+}
+
+.social__link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: @color-primary-white;
 }

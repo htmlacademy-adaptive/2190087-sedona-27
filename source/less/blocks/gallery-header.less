@@ -1,12 +1,23 @@
 .gallery-header {
+  max-width: 280px;
+  margin: 0 auto;
   margin-top: 37px;
   margin-bottom: 25px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 458px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 458px;
+  }
 }
 
 .gallery-header__text {
   width: 280px;
   margin: 0 auto;
+
 
   @media (min-width: @tablet-width) {
     width: 458px;
@@ -14,5 +25,18 @@
 
   @media (min-width: @desktop-width) {
     width: 458px;
+  }
+}
+
+.gallery-header__title {
+  margin-bottom: 35px;
+  font-size: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
   }
 }

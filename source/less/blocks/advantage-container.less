@@ -1,15 +1,25 @@
 .advantage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 320px;
   box-sizing: border-box;
   padding: 24px 26px;
   background-color: @bg-advantages;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 256px;
+    min-height: 256px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
+    min-height: 256px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 

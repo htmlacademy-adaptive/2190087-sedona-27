@@ -1,9 +1,19 @@
 .map {
-  margin-top: 45px;
+  margin-top: 4px;
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 21px;
+  }
 }
 
 .map__container {
   width: 100%;
+  display: block;
+  border: none;
 }
 
