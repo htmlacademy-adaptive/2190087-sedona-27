@@ -35,7 +35,7 @@
           </div>
         </nav>
         <div class="header__banner welcome-banner">
-          <img class="welcome-banner-form" width="461" height="350" src="../source/img/welcome-banner-text-form.svg" alt="Добро пожаловать в Седону!">
+          <img class="welcome-banner__image" width="461" height="350" src="../source/img/welcome-banner-text-form.svg" alt="Добро пожаловать в Седону!">
         </div>
       </header>
 
@@ -50,7 +50,13 @@
             <ul class="post__list">
               <li class="post__item post__item--landscape">
                 <figure class="post__content post__content--landscape">
-                  <img class="post__photo post__photo--landscape" src="./img/gallery-post_landscape.jpeg" width="280" height="280" alt="Народные просторы">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/gallery-post_landscape-desktop.jpg 1x, ./img/gallery-post_landscape-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/gallery-post_landscape-tablet.jpg 1x, ./img/gallery-post_landscape-tablet@2x.jpg 2x">
+                      <img class="post__photo post__photo--landscape" src="./img/gallery-post_landscape-mobile.jpg" width="280" height="280" srcset="img/gallery-post_landscape-mobile@2x.jpg 2x" alt="Фото">
+                  </picture>
                   <figcaption class="post__details details-container">
                     <div class="details-container__information">
                       <h3 class="details-container__title">Народные просторы</h3>
@@ -69,7 +75,13 @@
 
               <li class="post__item">
                 <figure class="post__content">
-                  <img class="post__photo" src="./img/gallery-post_plant.jpeg" width="280" height="280" alt="Местная растительность">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/gallery-post_plant-desktop.jpg 1x, ./img/gallery-post_plant-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/gallery-post_plant-tablet.jpg 1x, ./img/gallery-post_plant-tablet@2x.jpg 2x">
+                      <img class="post__photo" src="./img/gallery-post_plant-mobile.jpg" width="280" height="280" srcset="./img/gallery-post_plant-mobile@2x.jpg 2x" alt="Фото">
+                  </picture>
                   <figcaption class="post__details details-container">
                     <div class="details-container__information">
                       <h3 class="details-container__title">Местная растительность</h3>
@@ -88,7 +100,13 @@
 
               <li class="post__item">
                 <figure class="post__content">
-                  <img class="post__photo" src="./img/gallery-post_road.jpeg" width="280" height="280" alt="Дорога на север">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/gallery-post_road-desktop.jpg 1x, ./img/gallery-post_road-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/gallery-post_road-tablet.jpg 1x, ./img/gallery-post_road-tablet@2x.jpg 2x">
+                      <img class="post__photo" src="./img/gallery-post_road-mobile.jpg" width="280" height="280" srcset="./img/gallery-post_road-mobile@2x.jpg 2x" alt="Фото">
+                  </picture>
                   <figcaption class="post__details details-container">
                     <div class="details-container__information">
                       <h3 class="details-container__title">Дорога на север</h3>
@@ -107,7 +125,13 @@
 
               <li class="post__item">
                 <figure class="post__content">
-                  <img class="post__photo" src="./img/gallery-post_devil-bridge.jpeg" width="280" height="280" alt="Мост Дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/gallery-post_devil-bridge-desktop.jpg 1x, ./img/gallery-post_devil-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="./img/gallery-post_devil-bridge-tablet.jpg 1x, ./img/gallery-post_devil-bridge-tablet@2x.jpg 2x">
+                      <img class="post__photo" src="./img/gallery-post_devil-bridge-mobile.jpg" width="280" height="280" srcset="./img/gallery-post_devil-bridge-mobile@2x.jpg 2x" alt="Фото">
+                  </picture>
                   <figcaption class="post__details details-container">
                     <div class="details-container__information">
                       <h3 class="details-container__title">Мост Дьявола</h3>
