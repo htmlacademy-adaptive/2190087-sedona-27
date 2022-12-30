@@ -1,7 +1,34 @@
 .welcome-banner {
-  padding: 90px 0;
+  padding: 90px 0 70px;
   background-image: url("../../source/img/header-bg.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
+  background-color: @color-secondary-blue;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../source/img/header-bg@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../source/img/header-bg@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.welcome-banner__image {
+  width: 282px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
+  }
 }
