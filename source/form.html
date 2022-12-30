@@ -35,7 +35,7 @@
           </div>
         </nav>
         <div class="header__banner welcome-banner">
-          <img class="welcome-banner__image" width="461" height="350" src="../source/img/welcome-banner-text-form.svg" alt="Добро пожаловать в Седону!">
+          <img class="welcome-banner__image" width="461" height="350" src="../img/welcome-banner-text-form.svg" alt="Добро пожаловать в Седону!">
         </div>
       </header>
 
@@ -75,16 +75,25 @@
                 <legend class="feedback-form__legend title">Ваше общее впечатление:</legend>
                 <ul class="feedback-form__impression-list feedback-list">
                   <li class="feedback-item">
-                    <input class="feedback-list__radio hidden" type="radio" name="impression" id="positive" checked>
-                    <label class="feedback-list__label feedback-list__label--radio">Скорее положительное</label>
+                    <label class="feedback-list__label feedback-list__label--radio">
+                      <input class="visually-hidden feedback-list__radio" type="radio" name="impression" id="positive" checked>
+                      <span class="feedback-list__control-mark feedback-list__control-mark--radio"></span>
+                      <span class="feedback-list__control-label">Скорее положительное</span>
+                    </label>
                   </li>
                   <li class="feedback-item">
-                    <input class="feedback-list__radio hidden" type="radio" name="impression" id="negative">
-                    <label class="feedback-list__label feedback-list__label--radio">Скорее отрицательное</label>
+                    <label class="feedback-list__label feedback-list__label--radio">
+                      <input class="visually-hidden feedback-list__radio" type="radio" name="impression" id="negative">
+                      <span class="feedback-list__control-mark feedback-list__control-mark--radio"></span>
+                      <span class="feedback-list__control-label">Скорее отрицательное</span>
+                    </label>
                   </li>
                   <li class="feedback-item">
-                    <input class="feedback-list__radio hidden" type="radio" name="impression" id="undecided">
-                    <label class="feedback-list__label feedback-list__label--radio">Затрудняюсь ответить</label>
+                    <label class="feedback-list__label feedback-list__label--radio">
+                      <input class="visually-hidden feedback-list__radio" type="radio" name="impression" id="undecided">
+                      <span class="feedback-list__control-mark feedback-list__control-mark--radio"></span>
+                      <span class="feedback-list__control-label">Затрудняюсь ответить</span>
+                    </label>
                   </li>
               </ul>
               </fieldset>
@@ -93,20 +102,32 @@
                 <legend class="feedback-form__legend title">Посещенные<br> достопримечательности:</legend>
                 <ul class="feedback-form__impression-list feedback-list feedback-list--width">
                   <li class="feedback-item">
-                    <input class="feedback-list__checkbox hidden" type="checkbox" name="sightseeing" id="devil-bridge" checked>
-                    <label class="feedback-list__label feedback-list__label--checkbox">Мост Дьявола</label>
+                    <label class="feedback-list__label feedback-list__label--checkbox">
+                      <input class="visually-hidden feedback-list__checkbox" type="checkbox" name="sightseeing" checked>
+                      <span class="feedback-list__control-mark feedback-list__control-mark--checkbox"></span>
+                      <span class="feedback-list__control-label">Мост Дьявола</span>
+                    </label>
                   </li>
                   <li class="feedback-item">
-                    <input class="feedback-list__checkbox hidden" type="checkbox" name="sightseeing" id="bell-mountain" checked>
-                    <label class="feedback-list__label feedback-list__label--checkbox">Гора-Колокол</label>
+                    <label class="feedback-list__label feedback-list__label--checkbox">
+                      <input class="visually-hidden feedback-list__checkbox" type="checkbox" name="sightseeing" checked>
+                      <span class="feedback-list__control-mark feedback-list__control-mark--checkbox"></span>
+                      <span class="feedback-list__control-label">Гора-Колокол</span>
+                    </label>
                   </li>
                   <li class="feedback-item">
-                    <input class="feedback-list__checkbox hidden" type="checkbox" name="sightseeing" id="slide-park" checked>
-                    <label class="feedback-list__label feedback-list__label--checkbox">Слайд-парк</label>
+                    <label class="feedback-list__label feedback-list__label--checkbox">
+                      <input class="visually-hidden feedback-list__checkbox" type="checkbox" name="sightseeing" checked>
+                      <span class="feedback-list__control-mark feedback-list__control-mark--checkbox"></span>
+                      <span class="feedback-list__control-label">Слайд-парк</span>
+                    </label>
                   </li>
                   <li class="feedback-item">
-                    <input class="feedback-list__checkbox hidden" type="checkbox" name="sightseeing" id="red-rocks">
-                    <label class="feedback-list__label feedback-list__label--checkbox">Красные скалы</label>
+                    <label class="feedback-list__label feedback-list__label--checkbox">
+                      <input class="visually-hidden feedback-list__checkbox" type="checkbox" name="sightseeing">
+                      <span class="feedback-list__control-mark feedback-list__control-mark--checkbox"></span>
+                      <span class="feedback-list__control-label">Красные скалы</span>
+                    </label>
                   </li>
                   </ul>
               </fieldset>
@@ -115,7 +136,7 @@
             <fieldset class="feedback-form__section feedback-form__section--emotion">
               <legend class="feedback-form__legend title">Опишите свои эмоции:</legend>
               <label class="visually-hidden" for="review">Отзыв</label>
-              <textarea class="feedback-form__textarea" id="review" placeholder="Опишите подробно все свои восторги "></textarea>
+              <textarea class="feedback-form__textarea" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
 
             <div class="feedback-form__button feedback-form__button--submit">
