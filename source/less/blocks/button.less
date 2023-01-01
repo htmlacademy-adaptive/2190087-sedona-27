@@ -1,8 +1,11 @@
 .button {
   display: inline-block;
+  width: 280px;
+  margin: 0;
   padding: 17px 30px 15px 30px;
   color: @color-primary-white;
   font-size: 21px;
+  font-family: @font-main;
   line-height: 26px;
   text-align: center;
   font-weight: 700;
@@ -13,6 +16,14 @@
   border: none;
   cursor: pointer;
   outline: none;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+  }
 
   &:hover {
     background-color: @color-secondary-hover;
