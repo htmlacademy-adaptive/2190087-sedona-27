@@ -1,9 +1,6 @@
 .feedback-list {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  padding-top: 10px;
-  margin: 0;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
@@ -11,18 +8,17 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 576px;
-    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
-.feedback-list--width {
+.feedback-list--checkbox {
   @media (min-width: @tablet-width) {
     width: 480px;
   }
@@ -33,26 +29,45 @@
   }
 }
 
+.feedback-list--radio {
+  @media (min-width: @desktop-width) {
+    width: 854px;
+  }
+}
+
 .feedback-item {
   display: flex;
   margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
-    min-width: 224px;
+    width: 276px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 170px;
+    width: 250px;
+    margin-bottom: 0;
   }
 }
 
 .feedback-item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.feedback-item:last-child:not(.feedback-item--checkbox) {
   margin-bottom: 0;
 }
 
+.feedback-item--checkbox {
+  @media (min-width: @tablet-width) {
+    width: 224px;
+  }
+}
 
 .feedback-list__label {
   position: relative;
+  width: 185px;
   padding-left: 62px;
   font-size: 18px;
   line-height: 26px;

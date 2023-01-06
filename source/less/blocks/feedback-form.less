@@ -24,12 +24,36 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    width: 280px;
+    width: 100%;
     flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
-    width: 430px;
+    width: 100%;
+  }
+}
+
+.feedback-form__left-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.feedback-form__right-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    align-items: flex-end;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: flex-start;
+    width: 100%;
   }
 }
 
@@ -53,6 +77,13 @@
 }
 
 .feedback-form__fieldset-wrapper--text {
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (min-width: @desktop-width) {
+    width: 402px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -71,11 +102,15 @@
 
 .feedback-form__wrapper {
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 8px;
+  }
 }
 
 .feedback-form__section--impression {
   width: 100%;
-  margin-top: 47px;
+  margin-top: 50px;
   padding-bottom: 8px;
 }
 
@@ -86,8 +121,34 @@
 }
 
 .feedback-form__section--emotion {
+  display: flex;
   width: 100%;
+  margin-top: 15px;
   margin-bottom: 50px;
+}
+
+.feedback-form__impression-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 27px;
+  }
+}
+
+.feedback-form__sightseeing-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .feedback-form__legend {
@@ -95,14 +156,38 @@
   margin-bottom: 20px;
   padding: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 29px;
+  }
 }
+
+.feedback-form__legend--name {
+  padding-left: 35px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 48px;
+  }
+}
+
+.feedback-form__legend--contact {
+  padding-right: 23px;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 62px;
+  }
+}
+
 
 .feedback-form__label {
   position: relative;
   display: block;
-  width: 280px;
   margin-bottom: 2px;
   margin-left: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 267px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 430px;
@@ -110,7 +195,7 @@
 }
 
 .feedback-form__input {
-  width: 84%;
+  width: 89%;
   margin-bottom: 17px;
   padding: 16px;
   font-family: @font-main;
@@ -125,34 +210,50 @@ input:last-of-type {
   margin-bottom: 13px;
 }
 
-.feedback-form__label--phone::after {
-  content: "";
-  position: absolute;
-  width: 58px;
-  height: 58px;
-  top: 20px;
-  right: 17px;
-  background-image: url("../../img/phone.svg");
-  background-color: #e6e6e6;
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
+.feedback-form__label--phone {
+  @media (min-width: @desktop-width) {
+    width: 385px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: 20px;
+    right: 0;
+    background-image: url("../../img/phone.svg");
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+  }
 }
 
-.feedback-form__label--email::after {
-  content: "";
-  position: absolute;
-  width: 58px;
-  height: 58px;
-  top: 20px;
-  right: 17px;
-  background-image: url("../../img/email.svg");
-  background-color: #e6e6e6;
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
+.feedback-form__label--email {
+  @media (min-width: @desktop-width) {
+    width: 385px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    top: 20px;
+    right: 0;
+    background-image: url("../../img/email.svg");
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+  }
+}
+
+.feedback-form__textarea-wrapper {
+  display: flex;
 }
 
 .feedback-form__textarea {
-  min-height: 119px;
+  min-height: 126px;
   width: 246px;
   background-color: #f2f2f2;
   border: none;
@@ -162,6 +263,10 @@ input:last-of-type {
   font-size: 18px;
   line-height: 26px;
   resize: none;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 
   @media (min-width: @desktop-width) {
     width: 768px;
