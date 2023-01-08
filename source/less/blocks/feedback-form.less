@@ -33,6 +33,52 @@
   }
 }
 
+.feedback-form__section--experience {
+  margin-top: 48px;
+  padding-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.feedback-form__section--sightseeing {
+  padding-bottom: 8px;
+  margin-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 52px;
+    padding-bottom: 2px;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.feedback-form__section--emotion {
+  display: flex;
+  width: 100%;
+  margin-top: 51px;
+  margin-bottom: 56px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 15px;
+    margin-bottom: 49px;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 34px;
+  }
+}
+
 .feedback-form__left-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -63,7 +109,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -27px;
+    bottom: -23px;
     left: -19px;
     display: block;
     width: 320px;
@@ -95,7 +141,14 @@
     background-color: #e6e6e6;
 
     @media (min-width: @tablet-width) {
-      display: none;
+      top: 52px;
+      left: 322px;
+      height: 338px;
+      width: 1px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 495px;
     }
   }
 }
@@ -105,49 +158,6 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 8px;
-  }
-}
-
-.feedback-form__section--impression {
-  width: 100%;
-  margin-top: 50px;
-  padding-bottom: 8px;
-}
-
-.feedback-form__section--sightseeing {
-  width: 100%;
-  margin-top: 50px;
-  padding-bottom: 8px;
-}
-
-.feedback-form__section--emotion {
-  display: flex;
-  width: 100%;
-  margin-top: 15px;
-  margin-bottom: 50px;
-}
-
-.feedback-form__impression-list {
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 27px;
-  }
-}
-
-.feedback-form__sightseeing-list {
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
-
-  @media (min-width: @tablet-width) {
-    margin: 0 auto;
   }
 }
 
@@ -162,8 +172,40 @@
   }
 }
 
+.feedback-form__legend--experience {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+    padding: 0 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.feedback-form__legend--sightseeing {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+    padding: 0 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 53px;
+    margin-top: 50px;
+  }
+}
+
+.feedback-form__legend--emotion {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 70px;
+    padding: 0 77px;
+  }
+}
+
 .feedback-form__legend--name {
-  padding-left: 35px;
+  @media (min-width: @tablet-width) {
+    padding-left: 35px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 48px;
@@ -171,13 +213,14 @@
 }
 
 .feedback-form__legend--contact {
-  padding-right: 23px;
+  @media (min-width: @tablet-width) {
+    padding-right: 23px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-right: 62px;
   }
 }
-
 
 .feedback-form__label {
   position: relative;
@@ -253,7 +296,7 @@ input:last-of-type {
 }
 
 .feedback-form__textarea {
-  min-height: 126px;
+  min-height: 118px;
   width: 246px;
   background-color: #f2f2f2;
   border: none;
@@ -266,10 +309,11 @@ input:last-of-type {
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    min-height: 125px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 768px;
+    width: 737px;
   }
 }
 
@@ -289,10 +333,5 @@ input:last-of-type {
     justify-content: space-between;
     width: 768px;
   }
-}
-
-.feedback__send-mark {
-  display: block;
-  align-self: center;
 }
 

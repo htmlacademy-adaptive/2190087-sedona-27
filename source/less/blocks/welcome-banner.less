@@ -1,15 +1,18 @@
 .welcome-banner {
-  padding: 90px 0 70px;
-  background-image: url("../../img/header-bg.jpg");
-  background-position: 50% 0;
+  min-height: 389px;
+  padding-top: 90px;
+  background-image: url("../../img/header-triangle.svg"), url("../../img/header-bg.jpg");
+  background-position: 50% bottom;
+  background-size: auto, auto;
   background-repeat: no-repeat;
-  background-color: @color-secondary-blue;
+  background-color: @color-secondary-active;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/header-bg@2x.jpg");
-      background-size: cover;
+      background-image: url("../../img/header-triangle.svg"), url("../../img/header-bg@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: auto, 1200px 518px;
     }
   }
 
