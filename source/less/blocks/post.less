@@ -67,6 +67,7 @@
 
 .post__content--landscape {
   flex-basis: 100%;
+  padding-top: 35px;
 }
 
 .post__photo {
@@ -76,6 +77,7 @@
 
   @media (min-width: @tablet-width) {
     width: 324px;
+    height: 267px;
   }
 
   @media (min-width: @desktop-width) {
@@ -106,6 +108,7 @@
 
 //Likes
 .post__likes {
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -121,5 +124,17 @@
   @media (min-width: @desktop-width) {
     fill: @color-primary-white;
     opacity: 100%;
+  }
+}
+
+.post__likes-number {
+  font-family: @font-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 5px;
   }
 }

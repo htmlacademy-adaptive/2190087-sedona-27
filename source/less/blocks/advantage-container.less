@@ -4,7 +4,7 @@
   justify-content: center;
   width: 320px;
   box-sizing: border-box;
-  padding: 24px 26px;
+  padding: 19px 26px;
   background-color: @bg-advantages;
   text-align: center;
 
@@ -18,12 +18,29 @@
   @media (min-width: @desktop-width) {
     width: 400px;
     min-height: 256px;
+    padding-bottom: 0;
     padding-left: 33px;
     padding-right: 33px;
   }
 }
 
 .advantage-container--special {
+  padding: 30px 26px;
   color: @color-primary-white;
   background-color: @color-secondary-blue;
+
+  @media (min-width: @tablet-width) {
+    justify-content: stretch;
+    padding-top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 54px 75px 30px;
+  }
+}
+
+.advantages__item:nth-child(even) .advantage-container {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
