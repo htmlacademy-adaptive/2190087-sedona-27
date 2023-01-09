@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
   </head>
@@ -38,8 +38,8 @@
             </ul>
           </div>
         </nav>
-        <div class="header__banner welcome-banner">
-            <img class="welcome-banner__image" width="282" height="214" src="./img/welcome-banner-text-index.svg" alt="Добро пожаловать в Седону!">
+        <div class="welcome-banner">
+            <img class="welcome-banner__image" width="460" height="214" src="./img/welcome-banner-text-index.svg" alt="Добро пожаловать в Седону!">
           </div>
       </header>
 
@@ -54,9 +54,9 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--special">
                 <div class="advantage-container advantage-container--special">
-                  <h3 class="advantages__item__title title">Настоящий <br>городок</h3>
+                  <h3 class="advantages__item__title title">Настоящий <br class="breaker--tablet-desktop">городок</h3>
                   <p class="advantages__item__number">— №1 —</p>
-                  <p class="advantages__item__details">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  <p class="advantages__item__details">Седона не аттракцион для туристов, <br class="breaker--desktop">там течет своя жизнь</p>
                 </div>
                   <img class="advantages__item__image" src="./img/advantage_real-city.jpg" width="520" height="260" srcset="img/advantage_real-city@2x.jpg 2x" alt="Настоящий город Седона">
               <div class="sub-advantages">
@@ -79,16 +79,16 @@
 
             <li class="advantages__item advantages__item--special">
                 <div class="advantage-container advantage-container--special">
-                  <h3 class="advantages__item__title title">Там есть <br>Мост Дьявола</h3>
+                  <h3 class="advantages__item__title title">Там есть <br class="breaker--tablet-desktop">Мост Дьявола</h3>
                   <p class="advantages__item__number">— №2 —</p>
-                  <p class="advantages__item__details">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <p class="advantages__item__details">Да, по нему можно <br class="breaker--tablet"> пройти! Если вы осмелитесь, конечно</p>
                 </div>
                   <img class="advantages__item__image" src="./img/advantage_devil-bridge.jpg" width="520" height="260" srcset="img/advantage_devil-bridge@2x.jpg 2x" alt="Мост Дьявола" >
             </li>
 
             <li class="advantages__item">
               <div class="advantage-container">
-                <h3 class="advantages__item__title title">Небольшая <br>площадь</h3>
+                <h3 class="advantages__item__title title">Небольшая <br class="breaker--tablet-desktop">площадь</h3>
                 <p class="advantages__item__number">— №3 —</p>
                 <p class="advantages__item__details">Все интересные места находятся очень близко</p>
               </div>
@@ -96,16 +96,16 @@
 
             <li class="advantages__item">
               <div class="advantage-container">
-                <h3 class="advantages__item__title title">Красива <br>дорога</h3>
+                <h3 class="advantages__item__title title">Красивая <br class="breaker--tablet-desktop">дорога</h3>
                 <p class="advantages__item__number">— №4 —</p>
-                <p class="advantages__item__details">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+                <p class="advantages__item__details">Ехать в Седону из Лас-Вегаса <br class="breaker--mobile"> совсем <br class="breaker--tablet-desktop">не скучно</p>
               </div>
             </li>
             <li class="advantages__item">
               <div class="advantage-container">
-                <h3 class="advantages__item__title title">Мало <br>туристов</h3>
+                <h3 class="advantages__item__title title">Мало <br class="breaker--tablet-desktop">туристов</h3>
                 <p class="advantages__item__number">— №5 —</p>
-                <p class="advantages__item__details">Большинство едет в Гранд Каньон и толпится там</p>
+                <p class="advantages__item__details">Большинство едет в Гранд Каньон <br class="breaker--mobile"> и толпится там</p>
               </div>
             </li>
           </ul>
@@ -114,7 +114,7 @@
         <section class="search-hotel">
             <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
             <p class="search-hotel__title title">Заинтересовались?</p>
-            <p class="search-hotel__details">Укажите продполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="search-hotel__details">Укажите продполагаемые даты поездки, <br class="breaker--tablet-desktop">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="search-hotel__button button" href="#" >Найти гостиницу</a>
         </section>
 
@@ -125,9 +125,9 @@
           </iframe>
         </section>
 
-        <footer class="main-footer">
+        <footer class="main-footer main-footer--index">
             <a class="main-footer__tags" href="#">#visitsedona</a>
-            <div class="main-footer__social social">
+            <div class="main-footer__social main-footer__social--index social">
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -155,11 +155,13 @@
                 </li>
               </ul>
             </div>
-            <div class="main-footer__copyright copyright">
+            <div class="main-footer__copyright main-footer__copyright--index copyright">
               <p class="copyright__text">Разработано</p>
-              <svg class="copyright__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
-                <use href="./img/sprite.svg#academy"></use>
-              </svg>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="35" fill="none">
+                  <use href="./img/sprite.svg#academy"></use>
+                </svg>
+              </a>
             </div>
         </footer>
       </main>

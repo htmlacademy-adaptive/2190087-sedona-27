@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
@@ -13,7 +16,7 @@
         <a class="main-header__logo" href="./index.html">
           <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона">
         </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -34,8 +37,8 @@
             </ul>
           </div>
         </nav>
-        <div class="header__banner welcome-banner">
-          <img class="welcome-banner__image" width="461" height="350" src="../img/welcome-banner-text-form.svg" alt="Добро пожаловать в Седону!">
+        <div class="welcome-banner welcome-banner--short">
+          <img class="welcome-banner__image welcome-banner__image--short" width="229" height="39" src="../img/welcome-banner-text-form.svg" alt="Добро пожаловать в Седону!">
         </div>
       </header>
 
@@ -68,10 +71,10 @@
               <legend class="feedback-form__legend feedback-form__legend--contact title">Контактная информация:</legend>
               <div class="feedback-form__right-wrapper">
                 <label class="feedback-form__label feedback-form__label--phone" for="phone-number">Контактный телефон*:</label>
-                    <input class="feedback-form__input" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
+                    <input class="feedback-form__input feedback-form__input--contact" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
 
                 <label class="feedback-form__label feedback-form__label--email" for="email">Электронная почта*:</label>
-                  <input class="feedback-form__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                  <input class="feedback-form__input feedback-form__input--contact" type="email" id="email" name="email" placeholder="Введите e-mail" required>
 
               </div>
             </fieldset>
@@ -192,9 +195,11 @@
             </div>
               <div class="main-footer__copyright copyright">
                 <p class="copyright__text">Разработано</p>
-                <svg class="copyright__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none">
-                  <use href="./img/sprite.svg#academy"></use>
-                </svg>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="35" fill="none">
+                    <use href="./img/sprite.svg#academy"></use>
+                  </svg>
+                </a>
               </div>
         </footer>
         </main>
