@@ -68,6 +68,10 @@
   margin: 0;
 }
 
+.checkbox__input[type="checkbox"]:focus-visible + .checkbox__mark {
+  outline: 1px solid -webkit-focus-ring-color;
+}
+
 .checkbox__input[type="checkbox"]:checked + .checkbox__mark::before {
   content: "";
   position: absolute;

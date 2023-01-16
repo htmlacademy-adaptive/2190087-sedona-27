@@ -1,5 +1,5 @@
 .inner-header {
-  height: 108px;
+  min-height: 108px;
   padding-top: 49px;
   background-image: url("../../img/header-triangle.svg"), url("../../img/inner-header-bg-mobile.jpg");
   background-position: 50% bottom;
@@ -13,7 +13,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    height: 194px;
+    min-height: 194px;
     padding-top: 97px;
     background-image: url("../../img/header-triangle.svg"), url("../../img/inner-header-bg-tablet.jpg");
     background-size: 157%, cover;
@@ -26,7 +26,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 198px;
+    min-height: 198px;
     padding-top: 104px;
     background-image: url("../../img/header-triangle.svg"), url("../../img/inner-header-bg.jpg");
     background-size: 100%, cover;
