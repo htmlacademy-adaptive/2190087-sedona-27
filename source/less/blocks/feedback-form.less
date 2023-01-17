@@ -24,7 +24,7 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 280px;
     flex-direction: column;
   }
 
@@ -33,16 +33,23 @@
   }
 }
 
+@media (max-width: @mobile-width-only) {
+  .feedback-form__section--contact {
+    margin-top: 48px;
+  }
+}
+
 .feedback-form__section--experience {
-  margin-top: 48px;
+  margin-top: 43px;
   padding-bottom: 8px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 50px;
+    margin-top: 47px;
     border-top: 1px solid #dbdbdb;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 53px;
     margin-bottom: 75px;
   }
 }
@@ -52,7 +59,6 @@
   margin-top: 50px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 52px;
     padding-bottom: 2px;
     border-top: 1px solid #dbdbdb;
   }
@@ -70,7 +76,7 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 15px;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
     border-top: 1px solid #dbdbdb;
   }
 
@@ -155,10 +161,6 @@
 
 .feedback-form__wrapper {
   width: 100%;
-
-  @media (min-width: @desktop-width) {
-    margin-top: 8px;
-  }
 }
 
 .feedback-form__legend {
@@ -168,6 +170,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    width: 280px;
     margin-bottom: 29px;
   }
 }
@@ -175,18 +178,18 @@
 .feedback-form__legend--experience {
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
-    padding: 0 66px;
+    padding: 0 62px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 }
 
 .feedback-form__legend--sightseeing {
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
-    padding: 0 66px;
+    padding: 0 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -198,13 +201,13 @@
 .feedback-form__legend--emotion {
   @media (min-width: @tablet-width) {
     margin-bottom: 27px;
-    padding: 0 77px;
+    padding: 0 60px;
   }
 }
 
 .feedback-form__legend--name {
   @media (min-width: @tablet-width) {
-    padding-left: 35px;
+    padding-left: 21px;
   }
 
   @media (min-width: @desktop-width) {
@@ -214,7 +217,7 @@
 
 .feedback-form__legend--contact {
   @media (min-width: @tablet-width) {
-    padding-right: 23px;
+    padding-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -238,7 +241,7 @@
 }
 
 .feedback-form__input {
-  width: 89%;
+  width: 247px;
   margin-bottom: 17px;
   padding: 16px;
   font-family: @font-main;
@@ -247,15 +250,9 @@
   font-weight: 700;
   background-color: @bg-field;
   border: none;
-}
 
-input:last-of-type {
-  margin-bottom: 13px;
-}
-
-.feedback-form__input--contact {
   @media (min-width: @desktop-width) {
-    width: 92%;
+    width: 400px;
   }
 }
 
@@ -263,37 +260,31 @@ input:last-of-type {
   @media (min-width: @desktop-width) {
     width: 385px;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    top: 21px;
-    right: 1px;
-    background-image: url("../../img/phone.svg");
-    background-color: #e6e6e6;
-    background-repeat: no-repeat;
-    background-position: 50%, 50%;
+.feedback-form__input--phone {
+  background-image: url("../../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @media (min-width: @desktop-width) {
+    width: 370px;
+  }
+}
+
+.feedback-form__input--email {
+  background-image: url("../../img/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @media (min-width: @desktop-width) {
+    width: 370px;
   }
 }
 
 .feedback-form__label--email {
   @media (min-width: @desktop-width) {
     width: 385px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    top: 21px;
-    right: 1px;
-    background-image: url("../../img/email.svg");
-    background-color: #e6e6e6;
-    background-repeat: no-repeat;
-    background-position: 50%, 50%;
   }
 }
 
@@ -315,7 +306,7 @@ input:last-of-type {
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    min-height: 125px;
+    min-height: 127px;
   }
 
   @media (min-width: @desktop-width) {

@@ -40,7 +40,7 @@
           </div>
         </nav>
         <div class="inner-header">
-          <img class="inner-header__image" width="461" height="350" src="../img/inner-header-text.svg" alt="Добро пожаловать в Седону!">
+          <img class="inner-header__image" width="229" height="39" src="../img/inner-header-text.svg" alt="Добро пожаловать в Седону!">
         </div>
       </header>
 
@@ -53,13 +53,15 @@
           </header>
           <form class="feedback-form" method="post">
             <div class="feedback-form__fieldset-wrapper feedback-form__fieldset-wrapper--text">
-            <fieldset class="feedback-form__section feedback-form__section--text">
+            <fieldset class="feedback-form__section">
               <legend class="feedback-form__legend feedback-form__legend--name title">Представьтесь:</legend>
 
               <div class="feedback-form__left-wrapper">
                 <label class="feedback-form__label" for="name">Имя*:</label>
+                <div class="feedback-form__input-wrapper">
                   <input class="feedback-form__input" type="text" id="name" name="firstname" placeholder="Имя" value="Пётр" required>
-                <label class="feedback-form__label" for="lastname">Фамилия*:</label>
+                </div>
+                  <label class="feedback-form__label" for="lastname">Фамилия*:</label>
                   <input class="feedback-form__input" type="text" id="lastname" name="lastname" placeholder="Фамилия" value="Пустота" required>
                 <label class="feedback-form__label" for="middlename">Отчество*:</label>
                   <input class="feedback-form__input" type="text" id="middlename" name="middlename" placeholder="Отчество" value="Викторович" required>
@@ -69,14 +71,14 @@
             </div>
 
             <div class="feedback-form__fieldset-wrapper">
-            <fieldset class="feedback-form__section feedback-form__section--text">
+            <fieldset class="feedback-form__section feedback-form__section--contact">
               <legend class="feedback-form__legend feedback-form__legend--contact title">Контактная информация:</legend>
               <div class="feedback-form__right-wrapper">
                 <label class="feedback-form__label feedback-form__label--phone" for="phone-number">Контактный телефон*:</label>
-                    <input class="feedback-form__input feedback-form__input--contact" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
+                    <input class="feedback-form__input feedback-form__input--phone" type="tel" id="phone-number" name="phone-number" placeholder="Введите телефон" required>
 
                 <label class="feedback-form__label feedback-form__label--email" for="email">Электронная почта*:</label>
-                  <input class="feedback-form__input feedback-form__input--contact" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                  <input class="feedback-form__input feedback-form__input--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
 
               </div>
             </fieldset>
@@ -166,7 +168,9 @@
           </section>
 
           <footer class="main-footer">
-            <a class="main-footer__tags" href="#">#visitsedona</a>
+            <div class="tags">
+              <a class="main-footer__tags" href="#">#visitsedona</a>
+            </div>
             <div class="main-footer__social social">
               <ul class="social__list">
                 <li class="social__item">
@@ -231,8 +235,6 @@
         </div>
 
       </div>
-
-
 
     </body>
   </html>
