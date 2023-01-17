@@ -32,11 +32,11 @@
   display: block;
 
   @media (min-width: @tablet-width) {
-    min-width: 153px;
+    width: 153px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 240px;
+    width: 240px;
   }
 }
 
@@ -44,11 +44,19 @@
   .main-nav__item:nth-child(2) {
     margin-right: 156px;
   }
+
+  .main-nav__item:nth-child(4n+6) {
+    margin-right: 156;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__item:nth-child(2) {
-    margin-right: auto;
+    margin-right: 240px;
+  }
+
+  .main-nav__item:nth-child(4n+6) {
+    margin-right: 240px;
   }
 }
 
@@ -66,7 +74,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 17px 4px 12px 4px;
+  padding: 17px 15px 12px;
   color: @color-primary-white;
   text-decoration: none;
   font-size: 18px;

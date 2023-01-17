@@ -54,7 +54,7 @@
 .radio__label {
   position: relative;
   display: flex;
-  //width: 185px;
+  align-self: center;
   padding-left: 62px;
   font-size: 18px;
   line-height: 26px;
@@ -87,4 +87,8 @@
   height: 46px;
   border-radius: 50%;
   background-color: @bg-field;
+}
+
+.radio__input[type="radio"]:focus-visible + .radio__mark {
+  outline: 1px solid -webkit-focus-ring-color;
 }

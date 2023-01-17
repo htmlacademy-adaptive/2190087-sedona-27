@@ -3,13 +3,12 @@
   flex-direction: column;
   align-items: baseline;
   min-height: 80px;
-  padding-top: 15px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    min-height: 45px;
     background-color: @bg-field;
   }
 
@@ -17,8 +16,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    padding-left: 26px;
     color: @color-primary-white;
     background-color: fade(#000000, 30%);
   }
@@ -34,7 +31,12 @@
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
+    width: 210px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 270px;
   }
 }
 
@@ -43,6 +45,9 @@
   margin-bottom: 2px;
   font-size: 14px;
   line-height: 21px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   @media (min-width: @tablet-width) {
     margin-top: 3px;
