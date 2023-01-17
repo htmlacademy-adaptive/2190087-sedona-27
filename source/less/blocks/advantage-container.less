@@ -37,13 +37,13 @@
 }
 
 .advantage-container__text-box--special {
-  padding: 30px 26px;
+  padding: 40px 26px 38px;
   color: @color-primary-white;
   background-color: @color-secondary-blue;
 
   @media (min-width: @tablet-width) {
     justify-content: stretch;
-    padding-top: 54px;
+    padding: 54px 26px 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -62,7 +62,6 @@
     min-height: 254px;
     padding: 40px 40px 20px;
   }
-
 }
 
 @media (max-width: @mobile-width-only) {
@@ -82,5 +81,12 @@
 .advantage-container__text-box--center {
   @media (min-width: @desktop-width) {
     padding-bottom: 40px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .advantage-container__text-box--bridge {
+    padding-top: 28px;
+    padding-bottom: 31px;
   }
 }
