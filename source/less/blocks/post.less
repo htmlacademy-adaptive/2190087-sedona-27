@@ -32,6 +32,14 @@
 
 .post__item {
   position: relative;
+
+  &:first-child {
+    margin-top: 10px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 34px;
+    }
+  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -89,24 +97,34 @@
 .post__content {
   flex-basis: 50%;
   align-items: stretch;
+  width: 280px;
   margin: 0;
   padding-top: 24px;
   margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
+    width: 324px;
     padding: 0;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
+    width: 400px;
     padding: 0;
   }
 }
 
 .post__content--landscape {
   flex-basis: 100%;
-  padding-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .post__photo {
@@ -137,9 +155,17 @@
 }
 
 .post__details {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding: 17px 20px;
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     bottom: 0;
+    padding: 14px 20px;
+    padding-left: 26px;
     width: 100%;
     box-sizing: border-box;
   }
