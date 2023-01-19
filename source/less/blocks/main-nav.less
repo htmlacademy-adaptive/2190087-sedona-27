@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  z-index: 5;
+  z-index: 1;
   min-height: 56px;
   text-align: center;
   background-color: @color-primary-white;
@@ -74,7 +74,7 @@
 
 .main-nav__link {
   display: block;
-  padding: 17px 15px 12px;
+  padding: 19px 15px 15px;
   color: @color-primary-white;
   text-decoration: none;
   font-size: 18px;
@@ -215,6 +215,12 @@
 .main-nav--nojs .main-nav__wrapper {
   position: static;
   min-height: 0;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--nojs {
+    z-index: 3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
