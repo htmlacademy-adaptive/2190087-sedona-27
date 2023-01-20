@@ -7,7 +7,7 @@
     <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
@@ -15,11 +15,8 @@
   <body class="page__body">
     <div class="page__body-container">
       <header class="main-header">
-        <a class="main-header__logo" href="./index.html">
-          <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона">
-        </a>
-        <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle main-nav--nojs" type="button">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
@@ -38,6 +35,9 @@
               </li>
             </ul>
           </div>
+          <a class="main-header__logo" href="./index.html">
+            <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона">
+          </a>
         </nav>
         <div class="inner-header">
           <img class="inner-header__image" width="229" height="39" src="../img/inner-header-text.svg" alt="Добро пожаловать в Седону!">
@@ -177,7 +177,7 @@
           <p class="video-presentation__title title">Все еще сомневаетесь?</p>
           <p class="video-presentation__details">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video-presentation__wrapper">
-            <button class="video-resentation__button play-button" type="button">
+            <button class="video-presentation__button play-button" type="button">
               <svg class="play-button__icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use href="./img/sprite.svg#play-button"></use>
                 <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>

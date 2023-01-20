@@ -7,7 +7,7 @@
     <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
@@ -15,9 +15,6 @@
   <body class="page__body">
     <div class="page__body-container">
       <header class="main-header">
-        <a class="main-header__logo" href="./index.html">
-          <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона">
-        </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -38,6 +35,9 @@
               </li>
             </ul>
           </div>
+          <a class="main-header__logo" href="./index.html">
+            <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Городок Седона">
+          </a>
         </nav>
         <div class="inner-header">
           <img class="inner-header__image" width="229" height="39" src="../img/inner-header-text.svg" alt="Добро пожаловать в Седону!">
@@ -63,7 +63,7 @@
                 </div>
                   <label class="feedback-form__label" for="lastname">Фамилия*:</label>
                   <input class="feedback-form__input" type="text" id="lastname" name="lastname" placeholder="Фамилия" value="Пустота" required>
-                <label class="feedback-form__label" for="middlename">Отчество*:</label>
+                  <label class="feedback-form__label" for="middlename">Отчество*:</label>
                   <input class="feedback-form__input" type="text" id="middlename" name="middlename" placeholder="Отчество" value="Викторович" required>
               </div>
 
@@ -91,21 +91,21 @@
 
                 <ul class="radio__list">
                   <li class="radio__item">
-                    <label class="feedback-list__label radio__label">
+                    <label class="radio__label">
                       <input class="visually-hidden radio__input" type="radio" name="impression" id="positive" checked>
                       <span class="radio__mark"></span>
                       <span class="radio__label-text">Скорее положительное</span>
                     </label>
                   </li>
                   <li class="radio__item">
-                    <label class="feedback-list__label radio__label">
+                    <label class="radio__label">
                       <input class="visually-hidden radio__input" type="radio" name="impression" id="negative">
                       <span class="radio__mark"></span>
                       <span class="radio__label-text">Скорее отрицательное</span>
                     </label>
                   </li>
                   <li class="radio__item">
-                    <label class="feedback-list__label radio__label">
+                    <label class="radio__label">
                       <input class="visually-hidden radio__input" type="radio" name="impression" id="undecided">
                       <span class="radio__mark"></span>
                       <span class="radio__label-text">Затрудняюсь ответить</span>
@@ -117,7 +117,7 @@
 
               <div class="feedback-form__fieldset-wrapper feedback-form__fieldset-wrapper--sightseeing">
               <fieldset class="feedback-form__section feedback-form__section--sightseeing checkbox">
-                <legend class="feedback-form__legend feedback-form__legend--sightseeing title">Посещенные<br> достопримечательности:</legend>
+                <legend class="feedback-form__legend feedback-form__legend--sightseeing title">Посещенные&nbsp;<br>достопримечательности:</legend>
                 <ul class="checkbox__list">
                   <li class="checkbox__item">
                     <label class="checkbox__label">
@@ -156,13 +156,13 @@
               <legend class="feedback-form__legend feedback-form__legend--emotion title">Опишите свои эмоции:</legend>
               <label class="visually-hidden" for="review">Отзыв</label>
               <div class="feedback-form__textarea-wrapper">
-              <textarea class="feedback-form__textarea" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
+                <textarea class="feedback-form__textarea" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
             </fieldset>
 
             <div class="feedback-form__button feedback-form__button--submit">
-                <button class="button button__form" type="submit">Отправить отзыв</button>
-                <span class="feedback__send-mark">* &mdash; обязательные поля</span>
+              <button class="button" type="submit">Отправить отзыв</button>
+              <span class="feedback__send-mark">* &mdash; обязательные поля</span>
             </div>
           </form>
           </section>
@@ -216,8 +216,8 @@
       <div class="modal">
         <div class="modal__container modal__container--fail">
           <div class="modal__wrap modal__wrap--fail">
-            <h3 class="modal__header">Что-то пошло <br class="breaker--tablet-desktop"> не так!</h3>
-            <p class="modal__content">Проверьте поля, выделенные красным,<br class="breaker--tablet-desktop"> скорее всего вы забыли их заполнить</p>
+            <h3 class="modal__header">Что-то пошло<br class="breaker--tablet-desktop">не так!</h3>
+            <p class="modal__content">Проверьте поля, выделенные красным, <br class="breaker--tablet-desktop">скорее всего вы забыли их заполнить</p>
           </div>
           <div class="modal__button-wrap">
             <button class="button modal__button modal__button--fail">Ок</button>
@@ -227,7 +227,7 @@
         <div class="modal__container modal__container--success">
           <div class="modal__wrap modal__wrap--success">
             <h2 class="modal__header">Ваш отзыв отправлен!</h2>
-            <p class="modal__content">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
+            <p class="modal__content">Спасибо за ваше участие, ваш отзыв уже поступил к нам.&nbsp;<br>В ближайшее время мы опубликуем его на сайте.</p>
           </div>
           <div class="modal__button-wrap modal__button-wrap--success">
             <button class="button modal__button modal__button--success">Закрыть окно</button>
