@@ -7,7 +7,7 @@
     <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <title>HTML Academy: Седона</title>
@@ -63,7 +63,7 @@
                 </div>
                   <label class="feedback-form__label" for="lastname">Фамилия*:</label>
                   <input class="feedback-form__input" type="text" id="lastname" name="lastname" placeholder="Фамилия" value="Пустота" required>
-                <label class="feedback-form__label" for="middlename">Отчество*:</label>
+                  <label class="feedback-form__label" for="middlename">Отчество*:</label>
                   <input class="feedback-form__input" type="text" id="middlename" name="middlename" placeholder="Отчество" value="Викторович" required>
               </div>
 
@@ -156,13 +156,13 @@
               <legend class="feedback-form__legend feedback-form__legend--emotion title">Опишите свои эмоции:</legend>
               <label class="visually-hidden" for="review">Отзыв</label>
               <div class="feedback-form__textarea-wrapper">
-              <textarea class="feedback-form__textarea" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
-            </div>
+                <textarea class="feedback-form__textarea" id="review" placeholder="Опишите подробно все свои восторги"></textarea>
+              </div>
             </fieldset>
 
             <div class="feedback-form__button feedback-form__button--submit">
-                <button class="button button__form" type="submit">Отправить отзыв</button>
-                <span class="feedback__send-mark">* &mdash; обязательные поля</span>
+              <button class="button button__form" type="submit">Отправить отзыв</button>
+              <span class="feedback__send-mark">* &mdash; обязательные поля</span>
             </div>
           </form>
           </section>
@@ -216,8 +216,8 @@
       <div class="modal">
         <div class="modal__container modal__container--fail">
           <div class="modal__wrap modal__wrap--fail">
-            <h3 class="modal__header">Что-то пошло&nbsp;<br class="breaker--tablet-desktop">не так!</h3>
-            <p class="modal__content">Проверьте поля, выделенные красным,&nbsp;<br class="breaker--tablet-desktop">скорее всего вы забыли их заполнить</p>
+            <h3 class="modal__header">Что-то пошло<br class="breaker--tablet-desktop">не так!</h3>
+            <p class="modal__content">Проверьте поля, выделенные красным, <br class="breaker--tablet-desktop">скорее всего вы забыли их заполнить</p>
           </div>
           <div class="modal__button-wrap">
             <button class="button modal__button modal__button--fail">Ок</button>

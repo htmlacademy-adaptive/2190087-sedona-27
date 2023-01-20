@@ -1,11 +1,12 @@
 .modal {
+  display: none;
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: fade(#000000, 30%);
-  display: none;
 }
 
 .modal__container {
@@ -22,21 +23,14 @@
 }
 
 .modal__container--fail {
-  min-height: 280px;
-  display: none;
-
   @media (min-width: @tablet-width) {
     width: 400px;
-    min-height: 347px;
   }
 }
 
 .modal__container--success {
-  min-height: 335px;
-
   @media (min-width: @tablet-width) {
     width: 640px;
-    min-height: 347px;
   }
 }
 
@@ -48,10 +42,10 @@
 }
 
 .modal__wrap--fail {
-  padding: 45px 42px 28px 41px;
+  padding: 45px 42px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 50px 47px 49px 46px;
+    padding: 50px 47px 35px 46px;
   }
 }
 
@@ -67,6 +61,12 @@
 .modal__button-wrap {
   display: flex;
   justify-content: center;
+  padding: 10px 20px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .modal__button-wrap--success {
