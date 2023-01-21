@@ -6,7 +6,7 @@ let mapPicture = document.querySelector('.map__picture');
 
 
 navMain.classList.remove('main-nav--nojs');
-headerLogo.classList.remove('main-nav--nojs');
+headerLogo.classList.remove('main-header__logo--nojs');
 mapContainer .classList.remove('map__container--nojs');
 mapPicture .classList.remove('map__picture--nojs');
 
