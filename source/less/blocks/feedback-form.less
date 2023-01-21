@@ -31,57 +31,57 @@
   @media (min-width: @desktop-width) {
     width: 100%;
   }
-}
 
-@media (max-width: @mobile-width-only) {
-  .feedback-form__section--contact {
-    margin-top: 48px;
-  }
-}
-
-.feedback-form__section--experience {
-  margin-top: 43px;
-  padding-bottom: 8px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 47px;
-    border-top: 1px solid #dbdbdb;
+  &--contact {
+    @media (max-width: @mobile-width-only) {
+      margin-top: 48px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    margin-top: 53px;
-    margin-bottom: 75px;
-  }
-}
+  &--experience {
+    margin-top: 43px;
+    padding-bottom: 8px;
 
-.feedback-form__section--sightseeing {
-  padding-bottom: 8px;
-  margin-top: 50px;
+    @media (min-width: @tablet-width) {
+      margin-top: 47px;
+      border-top: 1px solid #dbdbdb;
+    }
 
-  @media (min-width: @tablet-width) {
-    padding-bottom: 2px;
-    border-top: 1px solid #dbdbdb;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 62px;
-  }
-}
-
-.feedback-form__section--emotion {
-  display: flex;
-  width: 100%;
-  margin-top: 51px;
-  margin-bottom: 56px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 15px;
-    margin-bottom: 50px;
-    border-top: 1px solid #dbdbdb;
+    @media (min-width: @desktop-width) {
+      margin-top: 53px;
+      margin-bottom: 75px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    margin-top: 34px;
+  &--sightseeing {
+    padding-bottom: 8px;
+    margin-top: 50px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 2px;
+      border-top: 1px solid #dbdbdb;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 62px;
+    }
+  }
+
+  &--emotion {
+    display: flex;
+    width: 100%;
+    margin-top: 51px;
+    margin-bottom: 56px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 15px;
+      margin-bottom: 50px;
+      border-top: 1px solid #dbdbdb;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 34px;
+    }
   }
 }
 
@@ -126,35 +126,35 @@
       display: none;
     }
   }
-}
 
-.feedback-form__fieldset-wrapper--text {
-  flex-direction: column;
-  align-items: flex-end;
-
-  @media (min-width: @desktop-width) {
-    width: 402px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -26px;
-    left: -19px;
-    display: block;
-    width: 320px;
-    height: 1px;
-    background-color: #e6e6e6;
-
-    @media (min-width: @tablet-width) {
-      top: 52px;
-      left: 322px;
-      height: 338px;
-      width: 1px;
-    }
+  &--text {
+    flex-direction: column;
+    align-items: flex-end;
 
     @media (min-width: @desktop-width) {
-      left: 495px;
+      width: 402px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -26px;
+      left: -19px;
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: #e6e6e6;
+
+      @media (min-width: @tablet-width) {
+        top: 52px;
+        left: 322px;
+        height: 338px;
+        width: 1px;
+      }
+
+      @media (min-width: @desktop-width) {
+        left: 495px;
+      }
     }
   }
 }
@@ -174,55 +174,55 @@
     width: 280px;
     margin-bottom: 29px;
   }
-}
 
-.feedback-form__legend--experience {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 38px;
-    padding: 0 62px;
+  &--experience {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 38px;
+      padding: 0 62px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 28px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    margin-bottom: 28px;
-  }
-}
+  &--sightseeing {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 38px;
+      padding: 0 60px;
+    }
 
-.feedback-form__legend--sightseeing {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 38px;
-    padding: 0 60px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 70px;
-    margin-top: 50px;
-  }
-}
-
-.feedback-form__legend--emotion {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 27px;
-    padding: 0 60px;
-  }
-}
-
-.feedback-form__legend--name {
-  @media (min-width: @tablet-width) {
-    padding-left: 21px;
+    @media (min-width: @desktop-width) {
+      margin-bottom: 70px;
+      margin-top: 50px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    padding-left: 48px;
-  }
-}
-
-.feedback-form__legend--contact {
-  @media (min-width: @tablet-width) {
-    padding-right: 20px;
+  &--emotion {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 27px;
+      padding: 0 60px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    padding-right: 62px;
+  &--name {
+    @media (min-width: @tablet-width) {
+      padding-left: 21px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 48px;
+    }
+  }
+
+  &--contact {
+    @media (min-width: @tablet-width) {
+      padding-right: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-right: 62px;
+    }
   }
 }
 
@@ -238,6 +238,18 @@
 
   @media (min-width: @desktop-width) {
     width: 430px;
+  }
+
+  &--phone {
+    @media (min-width: @desktop-width) {
+      width: 385px;
+    }
+  }
+
+  &--email {
+    @media (min-width: @desktop-width) {
+      width: 385px;
+    }
   }
 }
 
@@ -255,37 +267,25 @@
   @media (min-width: @desktop-width) {
     width: 400px;
   }
-}
 
-.feedback-form__label--phone {
-  @media (min-width: @desktop-width) {
-    width: 385px;
+  &--phone {
+    background-image: url("../../img/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media (min-width: @desktop-width) {
+      width: 370px;
+    }
   }
-}
 
-.feedback-form__input--phone {
-  background-image: url("../../img/phone-icon.svg");
-  background-repeat: no-repeat;
-  background-position: right;
+  &--email {
+    background-image: url("../../img/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 
-  @media (min-width: @desktop-width) {
-    width: 370px;
-  }
-}
-
-.feedback-form__input--email {
-  background-image: url("../../img/email-icon.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-
-  @media (min-width: @desktop-width) {
-    width: 370px;
-  }
-}
-
-.feedback-form__label--email {
-  @media (min-width: @desktop-width) {
-    width: 385px;
+    @media (min-width: @desktop-width) {
+      width: 370px;
+    }
   }
 }
 
