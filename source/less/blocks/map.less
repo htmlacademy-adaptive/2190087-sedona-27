@@ -12,8 +12,33 @@
   }
 }
 
+.map__picture {
+  display: none;
+
+  &--nojs {
+    display: block;
+  }
+}
+
+.map__photo {
+  display: block;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
 .map__container {
   width: 100%;
   display: block;
   border: none;
+
+  &--nojs {
+    display: none;
+  }
 }
