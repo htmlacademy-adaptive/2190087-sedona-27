@@ -66,6 +66,18 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
+
+  &:hover .radio__mark {
+    background-color: @color-secondary-disabled;
+  }
+
+  &:active .radio__mark {
+    background-color: #d5d5d5;
+
+    &::after {
+      opacity: 30%;
+    }
+  }
 }
 
 .radio__input {
