@@ -49,7 +49,7 @@
 
     @media (min-width: @desktop-width) {
       margin-top: 53px;
-      margin-bottom: 75px;
+      margin-bottom: 35px;
     }
   }
 
@@ -63,6 +63,7 @@
     }
 
     @media (min-width: @desktop-width) {
+      margin-top: 39px;
       margin-bottom: 62px;
     }
   }
@@ -287,6 +288,16 @@
       width: 370px;
     }
   }
+
+  &:hover {
+    background-color: @color-secondary-disabled;
+  }
+
+  &:focus {
+    background-color: @color-primary-white;
+    outline: none;
+    box-shadow: inset 0 0 0 4px @color-secondary-disabled;
+  }
 }
 
 .feedback-form__textarea-wrapper {
@@ -296,7 +307,7 @@
 .feedback-form__textarea {
   min-height: 118px;
   width: 246px;
-  background-color: #f2f2f2;
+  background-color: @bg-field;
   border: none;
   margin: 0 auto;
   padding: 16px;
@@ -312,6 +323,16 @@
 
   @media (min-width: @desktop-width) {
     width: 737px;
+  }
+
+  &:hover {
+    background-color: @color-secondary-disabled;
+  }
+
+  &:focus {
+    background-color: @color-primary-white;
+    outline: none;
+    box-shadow: inset 0 0 0 4px @color-secondary-disabled;
   }
 }
 

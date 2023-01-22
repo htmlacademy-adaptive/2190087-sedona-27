@@ -26,14 +26,16 @@
   @media (min-width: @desktop-width) {
     z-index: 6;
   }
+
+  &--nojs {
+    @media (max-width: @mobile-width-only) {
+      position: static;
+    }
+  }
 }
 
-@media (max-width: @mobile-width-only) {
-  .main-nav--nojs .main-header__logo {
-    position: static;
-  }
-
-  .main-nav--nojs .main-header__logo-image {
+.main-header__logo--nojs .main-header__logo-image {
+  @media (max-width: @mobile-width-only) {
     margin-bottom: -43px;
   }
 }

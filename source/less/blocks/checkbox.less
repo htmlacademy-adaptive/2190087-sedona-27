@@ -61,6 +61,18 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: none;
+
+  &:hover .checkbox__mark {
+    background-color: @color-secondary-disabled;
+  }
+
+  &:active .checkbox__mark {
+    background-color: #d5d5d5;
+
+    &::before {
+      opacity: 30%;
+    }
+  }
 }
 
 .checkbox__label-text {
