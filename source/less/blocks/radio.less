@@ -21,8 +21,8 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 854px;
-    justify-content: space-between;
+    width: 858px;
+    justify-content: flex-start;
     margin-top: 27px;
   }
 }
@@ -39,12 +39,18 @@
     justify-content: flex-end;
     align-self: center;
     max-width: 250px;
-    margin-bottom: 0;
+    margin-right: 52px;
   }
 
   &:last-child {
     margin-bottom: 0;
 
+    @media (min-width: @desktop-width) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &:nth-child(3n+3) {
     @media (min-width: @desktop-width) {
       margin-right: 0;
     }
